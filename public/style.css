@@ -1,0 +1,145 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    min-height: 100vh;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #6b7280;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.upload-box {
+    border: 2px dashed #cbd5e1;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.file-input {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.pdf-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.pdf-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #fafafa;
+}
+
+.pdf-name {
+    font-weight: 600;
+    word-break: break-word;
+}
+
+.open-btn {
+    text-decoration: none;
+    background: #111827;
+    color: white;
+    padding: 9px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.empty {
+    color: #6b7280;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+        padding: 18px 0;
+    }
+
+    .header h1 {
+        font-size: 23px;
+    }
+
+    .pdf-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .open-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
